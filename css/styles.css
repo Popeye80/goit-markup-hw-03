@@ -1,0 +1,178 @@
+:root {
+  --primary-text-color: #212121;
+  --back-ground-color: #2196f3;
+  --secondary-text-color: #ffffff;
+  --hero-color: #2f303a;
+  --light-text-color: #757575;
+  --footer-background-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--back-ground-color);
+}
+
+.logo-first {
+  color: var(--primary-text-color);
+}
+.logo-second {
+  color: var(--secondary-text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* меню и навигация */
+.menu .menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.contacts .contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--light-text-color);
+}
+.menu .menu-link.current {
+  color: var(--back-ground-color);
+}
+.menu .menu-link:hover,
+.menu .menu-link:focus,
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
+  color: var(--back-ground-color);
+}
+/* футер */
+.footer {
+  background-color: #2f303a;
+}
+.footer-nav .footer-nav-link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.footer-nav {
+  font-style: normal;
+}
+.footer-nav .footer-nav-links {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-background-color);
+}
+/* герой */
+.hero {
+  background-color: var(--hero-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.hero-button {
+  width: 220px;
+  height: 65px;
+
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--back-ground-color);
+  color: var(--secondary-text-color);
+}
+/* секция выгода */
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* вид деятельности */
+.classes {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+/* команда */
+.command {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.command-name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.command-name-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+}
+
+/* фильтр кнопок */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--back-ground-color);
+  color: var(--secondary-text-color);
+}
+/* работы */
+.works-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+}
