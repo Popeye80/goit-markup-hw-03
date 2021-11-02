@@ -39,7 +39,9 @@ a {
 /* .page-header { */
 /* background-color: rgb(62, 66, 78); */
 /* } */
-
+.header {
+  background-color: seagreen;
+}
 .logo {
   font-family: Raleway;
   font-weight: 700;
