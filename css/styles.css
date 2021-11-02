@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #212121;
   background-color: #ffffff;
@@ -23,10 +24,22 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
+/* .page-header { */
+/* background-color: rgb(62, 66, 78); */
+/* } */
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -98,20 +111,26 @@ a {
 /* герой */
 .hero {
   background-color: var(--hero-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-bottom: 30px;
 }
 .hero-button {
-  width: 220px;
-  height: 65px;
-
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+  text-align: center;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: var(--back-ground-color);
