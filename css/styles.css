@@ -36,9 +36,7 @@ a {
   padding-right: 15px;
   outline: 2px solid red;
 }
-/* .page-header { */
-/* background-color: rgb(62, 66, 78); */
-/* } */
+
 .header {
   background-color: var(--secondary-text-color);
 }
@@ -140,11 +138,14 @@ a {
   color: var(--secondary-text-color);
 }
 /* секция выгода */
-.benefits,
-.section-class,
-.section-command,
-.footer {
-  margin-top: 94px;
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .benefits-title {
   margin-top: 0;
