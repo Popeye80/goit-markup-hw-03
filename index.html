@@ -18,8 +18,7 @@
 
     <header class="header">
     <div class="container">
-        <div>
-         <nav>
+                 <nav>
          <a class="logo" href="">Web<span class="logo-first">Studio</span> </a>
 
          <ul class="menu list">
@@ -28,26 +27,23 @@
             <li class="menu-item"> <a class="menu-link" href="">Контакты</a></li>
         </ul>
         </nav>
-    </div>
-    
-    <div>
         <ul class="contacts list">
         <li class="contacts-item"> <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="contacts-item"> <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
-</div>
+        </ul>
+
 </div>
 </header>
-
     <main>
-            <section class="hero" >
+            <section class="hero">
                 <div class="container">
                 <h1 class="hero-title" lang="ru" >Эффективные решения для вашего бизнеса</h1>  
                 <button class="hero-button" type="button">Заказать услугу</button>
                 </div>
             </section>
        
-                <section>
+                <section class="benefits">
+                    <div class="container">
             <h2 class="visually-hidden"  >Преимущества компании</h2>
             <ul class="benefits list">
                 <li class="benefits-item">
@@ -68,7 +64,9 @@
                 </li>
             </ul>
         </section>
-        <section>
+        </div>
+        <section class="section-class">
+            <div class="container">
             <h2 class="classes" >Чем мы занимаемся</h2>
             <ul class="classes-item list" >
                 <li>
@@ -81,39 +79,52 @@
                     <img src="./images/img3.jpg" alt="Working with color picking" width="370" height="294">
                 </li>
             </ul>
+            </div>
         </section>
-        <section>
-            <h2 class="command" >Наша команда</h2>
+        <section class="section-command">
+            <div class="container">
+                <h2 class="command" >Наша команда</h2>
             <ul class="command-name list">
                 <li>
                     <img src="./images/Igor.jpg" alt="Igor" width="270" height="260">
-                    <h3 class="command-name-title" lang="ru">Игорь Демьяненко</h3>
-                    <p class="command-name-text" >Product Designer</p>
+                    <div class="command-selector">
+                        <h3 class="command-name-title" lang="ru">Игорь Демьяненко</h3>
+                        <p class="command-name-text" >Product Designer</p>
+                    </div>
                 </li>
 
                 <li>
                     <img src="./images/Olga.jpg" alt="Olga" width="270" height="260">
-                    <h3 class="command-name-title" lang="ru">Ольга Репина</h3>
+                    <div class="command-selector">
+                        <h3 class="command-name-title" lang="ru">Ольга Репина</h3>
                     <p class="command-name-text" >Frontend Developer</p>
+                    </div>
                 </li>
 
                 <li>
                     <img src="./images/Nikolay.jpg" alt="Nikolay" width="270" height="260">
+                    <div class="command-selector">
                     <h3 class="command-name-title" lang="ru">Николай Тарасов</h3>
                     <p class="command-name-text" >Marketing<p>
+                        </div>
                 </li>
 
                 <li>
                     <img src="./images/Michail.jpg" alt="Michail" width="270" height="260">
+                    <div class="command-selector">
                     <h3 class="command-name-title" lang="ru">Михаил Ермаков</h3>
                     <p class="command-name-text" >UI Designer</p>
+                    </div>
                 </li>
 
             </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <a class="logo" href="">Web<span class="logo-second">Studio</span> </a>
+        <div class="con
+        tainer">
+            <a class="logo" href="">Web<span class="logo-second">Studio</span> </a>
         <address>
             <ul class="footer-nav list">
                 <li class="footer-nav-item"><a class="footer-nav-link" href="https://goo.gl/maps/Tve16uMiMmE9oABs9"
@@ -126,6 +137,7 @@
                 <li class="footer-nav-item"><a class="footer-nav-links" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 

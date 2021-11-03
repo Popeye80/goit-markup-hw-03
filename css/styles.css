@@ -21,6 +21,14 @@ body {
   color: #212121;
   background-color: #ffffff;
 }
+/* h1,
+h2,
+h3,
+ul,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}*/
 
 .list {
   list-style: none;
@@ -40,7 +48,7 @@ a {
 /* background-color: rgb(62, 66, 78); */
 /* } */
 .header {
-  background-color: seagreen;
+  background-color: var(--secondary-text-color);
 }
 .logo {
   font-family: Raleway;
@@ -59,6 +67,7 @@ a {
 }
 
 .visually-hidden {
+  margin-top: 0;
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0;
@@ -114,10 +123,10 @@ a {
 .hero {
   background-color: var(--hero-color);
   text-align: center;
+  /* margin-bottom: 94px; */
 }
 .hero-title {
   margin-top: 0;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -139,43 +148,67 @@ a {
   color: var(--secondary-text-color);
 }
 /* секция выгода */
+.benefits,
+.section-class,
+.section-command,
+.footer {
+  margin-top: 94px;
+}
 .benefits-title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
 .benefits-text {
+  margin-top: 10px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 /* вид деятельности */
+
 .classes {
+  margin-top: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
+
 /* команда */
+
 .command {
+  margin-bottom: 50px;
+  margin-top: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
+
 .command-name-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .command-name-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--light-text-color);
+}
+.command-selector {
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 /* фильтр кнопок */
