@@ -210,9 +210,17 @@ a {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-
+.works-selector {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 /* фильтр кнопок */
+.filter {
+  width: 611px;
+}
 .filter-button {
+  background-color: var(--secondary-text-color);
+  border: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -221,11 +229,36 @@ a {
 }
 .filter-button:hover,
 .filter-button:focus {
+  font-weight: 500;
+  display: inline-block;
+
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
   background-color: var(--back-ground-color);
   color: var(--secondary-text-color);
 }
+.filter-item-all {
+  width: 73px;
+}
+.filter-item-web {
+  width: 128px;
+}
+.filter-item-annexes {
+  width: 145px;
+}
+.filter-item-design {
+  width: 103px;
+}
+.filter-item-marketing {
+  width: 130px;
+}
 /* работы */
 .works-title {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -233,8 +266,13 @@ a {
 }
 
 .works-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--light-text-color);
+}
+.section-portfolio {
+  margin-bottom: 188px;
 }
