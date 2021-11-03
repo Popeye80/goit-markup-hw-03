@@ -21,14 +21,6 @@ body {
   color: #212121;
   background-color: #ffffff;
 }
-/* h1,
-h2,
-h3,
-ul,
-p {
-  margin-bottom: 0;
-  margin-top: 0;
-}*/
 
 .list {
   list-style: none;
@@ -172,6 +164,7 @@ a {
 /* вид деятельности */
 
 .classes {
+  margin-bottom: 50px;
   margin-top: 0;
   font-weight: 700;
   font-size: 36px;
