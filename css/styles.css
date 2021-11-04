@@ -12,9 +12,12 @@ html {
   --secondary-text-color: #ffffff;
   --hero-color: #2f303a;
   --light-text-color: #757575;
+  --border-line-color: #ececec;
   --footer-background-color: rgba(255, 255, 255, 0.6);
 }
-
+.main-nav {
+  border-bottom: 2px solid var(--border-line-color);
+}
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -34,7 +37,7 @@ a {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .header {
@@ -70,6 +73,7 @@ a {
 .menu {
   margin-left: 93px;
 }
+
 .contacts {
   margin-left: auto;
 }
