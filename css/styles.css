@@ -23,7 +23,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
   background-color: #ffffff;
-  width: 1200px;
+  width: 1230px;
 }
 
 .list {
@@ -76,7 +76,7 @@ a {
 }
 
 .contacts {
-  margin-left: auto;
+  margin-left: 331px;
 }
 /* .menu .menu-item,
 .contacts .contacts-link {
@@ -192,6 +192,8 @@ a {
 }
 .section-portfolio {
   margin-bottom: 188px;
+}
+.benefits {
 }
 .benefits-title {
   margin-top: 0;
