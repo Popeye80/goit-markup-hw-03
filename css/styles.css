@@ -55,6 +55,21 @@ a {
 .logo-second {
   color: var(--secondary-text-color);
 }
+.menu,
+.contacts {
+  display: flex;
+}
+.main-nav {
+  display: flex;
+}
+.menu .menu-item,
+.contacts .contacts-link {
+  outline: 1px solid red;
+}
+.menu .menu-item:not(:last-child),
+.contacts .contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .visually-hidden {
   margin-top: 0;
@@ -68,6 +83,9 @@ a {
 }
 /* меню и навигация */
 .menu .menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
