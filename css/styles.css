@@ -59,7 +59,10 @@ a {
 .main-nav,
 .menu-nav,
 .menu,
-.contacts {
+.contacts,
+.benefits,
+.classes-item,
+.command-name {
   display: flex;
   align-items: center;
 }
@@ -76,6 +79,11 @@ a {
 .menu .menu-item:not(:last-child),
 .contacts .contacts-item:not(:last-child) {
   margin-right: 50px;
+}
+.benefits .benefits-item:not(:last-child),
+.classes-item .classes-img:not(:last-child),
+.command-name .command-img:not(:last-child) {
+  margin-right: 30px;
 }
 
 .visually-hidden {
@@ -171,7 +179,11 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-bottom: 94px;
 }
+/*.benefits, {
+  margin-top: 94px;
+}*/
 .benefits-title {
   margin-top: 0;
   font-weight: 700;
@@ -196,6 +208,7 @@ a {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* команда */
@@ -207,6 +220,7 @@ a {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .command-name-title {
@@ -228,6 +242,9 @@ a {
 .command-selector {
   padding-bottom: 30px;
   padding-top: 30px;
+}
+.command-name li {
+  text-align: center;
 }
 .works-selector {
   padding-bottom: 20px;
