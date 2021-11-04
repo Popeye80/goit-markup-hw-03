@@ -133,7 +133,7 @@ a {
 }
 /* футер */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--hero-color);
 }
 .footer-nav .footer-nav-link {
   font-size: 14px;
@@ -154,7 +154,6 @@ a {
 .hero {
   background-color: var(--hero-color);
   text-align: center;
-  /* margin-bottom: 94px; */
 }
 .hero-title {
   margin-top: 0;
