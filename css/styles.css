@@ -14,14 +14,13 @@ html {
   --light-text-color: #757575;
   --border-line-color: #ececec;
   --footer-background-color: rgba(255, 255, 255, 0.6);
+  --command-fon: #f5f4fa;
 }
 
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #212121;
   background-color: #ffffff;
-  width: 1200px;
 }
 
 .list {
@@ -33,10 +32,17 @@ a {
   text-decoration: none;
 }
 .container {
+  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid red; */
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 .header {
@@ -58,7 +64,10 @@ a {
 .logo-second {
   color: var(--secondary-text-color);
 }
-
+.img {
+  display: block;
+  height: auto;
+}
 .main-nav,
 .menu-nav,
 .menu,
@@ -75,7 +84,7 @@ a {
 }
 
 .contacts {
-  margin-left: 331px;
+  margin-left: auto;
 }
 /* .menu .menu-item,
 .contacts .contacts-link {
@@ -90,10 +99,16 @@ a {
 .command-name .command-img:not(:last-child) {
   margin-right: 30px;
 }
-.filter .filter-item:not(:last-child) {
+.filter > .filter-item:not(:last-child) {
   margin-right: 8px;
+  border: none;
 }
-
+.footer .footer-nav-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.portfolio {
+  margin-top: -94px;
+}
 .visually-hidden {
   margin-top: 0;
   position: absolute;
@@ -134,8 +149,9 @@ a {
 /* футер */
 .footer {
   background-color: var(--hero-color);
-  background-repeat: no-repeat;
+  padding: 60px 0;
 }
+
 .footer-nav .footer-nav-link {
   font-size: 14px;
   line-height: 1.7;
@@ -144,6 +160,7 @@ a {
 }
 .footer-nav {
   font-style: normal;
+  margin-top: 20px;
 }
 .footer-nav .footer-nav-links {
   font-size: 14px;
@@ -151,8 +168,10 @@ a {
   letter-spacing: 0.03em;
   color: var(--footer-background-color);
 }
+
 /* герой */
 .hero {
+  padding: 200px 0;
   background-color: var(--hero-color);
   text-align: center;
 }
@@ -187,19 +206,15 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-bottom: 94px;
 }
-.section-portfolio {
-  margin-bottom: 188px;
-}
-.benefits {
-}
+
 .benefits-title {
-  margin-top: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
 }
 .benefits-text {
   margin-top: 10px;
@@ -207,7 +222,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--light-text-color);
 }
 /* вид деятельности */
 
@@ -254,7 +269,7 @@ a {
   padding-top: 30px;
 }
 .command-name li {
-  text-align: center;
+  background-color: var(#f5f4fa);
 }
 
 /* фильтр кнопок */
@@ -262,28 +277,22 @@ a {
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-item {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
-  /* width: 611px; */
-  /* align-items: center; */
-}
+
 .filter-button {
   background-color: var(--secondary-text-color);
-  border: 0;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: none;
 }
+
 .filter-button:hover,
 .filter-button:focus {
   font-weight: 500;
   display: inline-block;
-
   border-radius: 4px;
   text-align: center;
   font-size: 16px;
@@ -319,7 +328,6 @@ a {
   padding-right: 24px;
 }
 .works-item {
-  display: flex;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
