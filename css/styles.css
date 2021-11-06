@@ -41,7 +41,8 @@ a {
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
 }
 
@@ -102,6 +103,9 @@ p {
 .filter > .filter-item:not(:last-child) {
   margin-right: 8px;
   border: none;
+}
+.filter {
+  margin-bottom: 34px;
 }
 .footer .footer-nav-item:not(:last-child) {
   margin-bottom: 9px;
