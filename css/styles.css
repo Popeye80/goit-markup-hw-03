@@ -20,20 +20,17 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-text-color);
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 a {
   text-decoration: none;
 }
 .container {
-  margin-left: 0;
-  margin-right: 0;
+  /*margin-left: 0;
+  margin-right: 0;*/
+  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -42,9 +39,11 @@ a {
 h1,
 h2,
 h3,
-ul p {
+ul,
+p {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .img {
   display: block;
@@ -60,10 +59,7 @@ ul p {
   width: 1px;
   overflow: hidden;
 }
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -146,10 +142,7 @@ ul p {
   background-color: var(--back-ground-color);
   color: var(--secondary-text-color);
 }
-.filter .filter-item:not(:last-child) {
-  margin-right: 8px;
-  border: none;
-}
+
 .filter {
   margin-bottom: 34px;
 }
@@ -281,6 +274,9 @@ ul p {
 }
 
 /* команда */
+.commands {
+  background-color: var(--command-fon);
+}
 .command {
   margin-bottom: 50px;
   margin-top: 0;
