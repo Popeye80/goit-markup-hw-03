@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -22,7 +23,6 @@ body {
   color: #212121;
   background-color: #ffffff;
 }
-
 .list {
   list-style: none;
   padding: 0;
@@ -32,20 +32,44 @@ a {
   text-decoration: none;
 }
 .container {
-  margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 h1,
 h2,
 h3,
-p,
-ul {
+ul p {
   margin: 0;
+  padding: 0;
+}
+.img {
+  display: block;
+  height: auto;
+}
+.visually-hidden {
+  margin-top: 0;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
+/* хэдер */
 .header {
   background-color: var(--secondary-text-color);
   border-bottom: 2px solid var(--border-line-color);
@@ -58,17 +82,14 @@ ul {
   letter-spacing: 0.03em;
   color: var(--back-ground-color);
 }
-
 .logo-first {
   color: var(--primary-text-color);
 }
 .logo-second {
   color: var(--secondary-text-color);
 }
-.img {
-  display: block;
-  height: auto;
-}
+
+/* флексы */
 .main-nav,
 .menu-nav,
 .menu,
@@ -80,17 +101,15 @@ ul {
   display: flex;
   align-items: center;
 }
+.main-nav {
+  padding-left: 215px;
+}
 .menu {
   margin-left: 93px;
 }
-
 .contacts {
   margin-left: auto;
 }
-/* .menu .menu-item,
-.contacts .contacts-link {
-  outline: 1px solid red;
-}*/
 .menu .menu-item:not(:last-child),
 .contacts .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -100,29 +119,41 @@ ul {
 .command-name .command-img:not(:last-child) {
   margin-right: 30px;
 }
-.filter > .filter-item:not(:last-child) {
+
+/* фильтр кнопок */
+.filter {
+  justify-content: center;
+}
+.filter-button {
+  background-color: var(--secondary-text-color);
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+}
+.filter-button:hover,
+.filter-button:focus {
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  background-color: var(--back-ground-color);
+  color: var(--secondary-text-color);
+}
+.filter .filter-item:not(:last-child) {
   margin-right: 8px;
   border: none;
 }
 .filter {
   margin-bottom: 34px;
 }
-.footer .footer-nav-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-.portfolio {
-  margin-top: -94px;
-}
-.visually-hidden {
-  margin-top: 0;
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
+
 /* меню и навигация */
 .menu .menu-link {
   display: block;
@@ -150,32 +181,11 @@ ul {
 .contacts .contacts-link:focus {
   color: var(--back-ground-color);
 }
-/* футер */
-.footer {
-  background-color: var(--hero-color);
-  padding: 60px 0;
-}
-
-.footer-nav .footer-nav-link {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-.footer-nav {
-  font-style: normal;
-  margin-top: 20px;
-}
-.footer-nav .footer-nav-links {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--footer-background-color);
-}
 
 /* герой */
 .hero {
-  padding: 200px 0;
+  padding-top: 207px;
+  padding-bottom: 273px;
   background-color: var(--hero-color);
   text-align: center;
 }
@@ -201,17 +211,8 @@ ul {
   background-color: var(--back-ground-color);
   color: var(--secondary-text-color);
 }
+
 /* секция выгода */
-
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -228,82 +229,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--light-text-color);
 }
-/* вид деятельности */
-
-.classes {
-  margin-bottom: 50px;
-  margin-top: 0;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-/* команда */
-
-.command {
-  margin-bottom: 50px;
-  margin-top: 0;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-.command-name-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-.command-name-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--light-text-color);
-}
-.command-selector {
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-.command-name li {
-  background-color: var(#f5f4fa);
-}
-
-/* фильтр кнопок */
-.filter {
-  justify-content: center;
-}
-
-.filter-button {
-  background-color: var(--secondary-text-color);
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  border: none;
-}
-
-.filter-button:hover,
-.filter-button:focus {
-  font-weight: 500;
-  display: inline-block;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  background-color: var(--back-ground-color);
-  color: var(--secondary-text-color);
-}
 
 /* работы */
 .works-title {
@@ -314,7 +239,6 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
 .works-text {
   margin-top: 0;
   margin-bottom: 0;
@@ -323,7 +247,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--light-text-color);
 }
-
 .works-selector {
   padding-bottom: 20px;
   padding-top: 20px;
@@ -344,4 +267,78 @@ ul {
 .works {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* вид деятельности */
+.classes {
+  margin-bottom: 50px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* команда */
+.command {
+  margin-bottom: 50px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.command-name-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.command-name-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+}
+.command-selector {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+/* .command-name li { 
+  background-color: var(#f5f4fa);
+ } */
+
+/* футер */
+.footer {
+  background-color: var(--hero-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.footer .footer-nav-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address {
+  padding-left: 143px;
+}
+.footer-nav .footer-nav-link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.footer-nav {
+  font-style: normal;
+  margin-top: 20px;
+}
+.footer-nav .footer-nav-links {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-background-color);
 }
